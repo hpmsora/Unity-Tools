@@ -38,7 +38,7 @@ public class ButtonClickAction : MonoBehaviour {
 		binaryFormatter.Serialize (savedFile, data);
 		savedFile.Close ();
 
-		OutputText.text = "File Saved!";
+		OutputText.text = "File Saved!\n" + Application.persistentDataPath;
 	}
 
 	void loaded() {
