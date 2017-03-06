@@ -46,11 +46,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GenerateNewNode.cs" />
      <Compile Include="Assets\UIGraph\Scripts\Connection.cs" />
      <Compile Include="Assets\UIGraph\Scripts\ConnectionManager.cs" />
      <Compile Include="Assets\UIGraph\Scripts\ConnectionPoint.cs" />
      <Compile Include="Assets\UIGraph\Scripts\GraphNode.cs" />
-     <Compile Include="Assets\UIGraph\Scripts\Util\NewBehaviourScript.cs" />
      <Compile Include="Assets\UIGraph\Scripts\Util\ObfuscateObject.cs" />
      <Compile Include="Assets\UIGraph\Scripts\Util\ObfuscateText.cs" />
      <Compile Include="Assets\UIGraph\Scripts\Util\SpinCamera.cs" />
