@@ -1,14 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/UIGraph/Scripts/Util/NewBehaviourScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GenerateNewNode.cs">
     <Files>
+      <File FileName="Assets/GenerateNewNode.cs" Line="13" Column="114" />
       <File FileName="Assets/UIGraph/Scripts/GraphNode.cs" Line="1" Column="1" />
       <File FileName="Assets/UIGraph/Scripts/ConnectionPoint.cs" Line="1" Column="1" />
       <File FileName="Assets/UIGraph/Editor/GraphNodeEditor.cs" Line="1" Column="1" />
-      <File FileName="Assets/UIGraph/Scripts/ConnectionManager.cs" Line="87" Column="28" />
-      <File FileName="Assets/UIGraph/Scripts/Util/NewBehaviourScript.cs" Line="4" Column="14" />
-      <File FileName="Assets/UIGraph/Scripts/Connection.cs" Line="110" Column="10" />
-      <File FileName="Assets/GenerateNewNode.cs" Line="5" Column="20" />
+      <File FileName="Assets/UIGraph/Scripts/ConnectionManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/UIGraph/Scripts/Connection.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
