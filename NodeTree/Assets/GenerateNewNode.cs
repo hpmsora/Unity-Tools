@@ -8,9 +8,11 @@ public class GenerateNewNode : MonoBehaviour {
 	public Transform parentGroup;
 	public Transform button;
 	public GameObject node;
+	public GameObject nodeConnection;
 	public int nodeTrim;
 
 	private GameObject newNode;
+	private	GameObject newConnection;
 
 	void Start() {
 		button.GetComponent<Button> ().interactable = true;
@@ -82,6 +84,16 @@ public class GenerateNewNode : MonoBehaviour {
 				}
 				newNode = Instantiate (node, pos, Quaternion.identity, parentGroup) as GameObject;
 				newNode.name = name;
+				////////////////////////////////////////////////////////////////////////////////////////////////
+				newConnection = Instantiate (nodeConnection, pos, Quaternion.identity, parentGroup) as GameObject;
+
+				newConnection.name = name + "Connection";
+
+				Connection nC = newConnection.GetComponent<Connection> ();
+				nC.SetTargets (transform as RectTransform, newNode.transform as RectTransform);
+				nC.SetPoints(currentDirection, (currentDirection + 2) % 4);
+
+				////////////////////////////////////////////////////////////////////////////////////////////////
 				GameControllerScript.Instance.nodeList.Add (_node);
 			}
 		}
@@ -112,19 +124,14 @@ public class GenerateNewNode : MonoBehaviour {
 		switch (node.direction) {
 		case 0:
 			return new int[] { node.order, node.level };
-			break;
 		case 1:
 			return new int[] { node.level, node.order };
-			break;
 		case 2:
 			return new int[] { -node.order, -node.level };
-			break;
 		case 3:
 			return new int[] { -node.level, -node.order };
-			break;
 		default:
 			return new int[] {0, 0};
-			break;
 		}
 	}
 }
