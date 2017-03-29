@@ -55,6 +55,7 @@ public class GameControllerScript : MonoBehaviour {
 				int[] pos = GenerateNewNode.Instance.changeAbpos (nodeList [i]);
 
 				newNode = Instantiate (node, new Vector3 (pos [0] * 100, pos [1] * 100, -50), Quaternion.identity, parentGroup) as GameObject;
+				newNode.name = nodeList [i].name;
 			}
 		}
 	}
