@@ -10,11 +10,13 @@ public class GenerateNewNode : MonoBehaviour {
 	public GameObject node;
 	public GameObject nodeConnection;
 	public int nodeTrim;
+	public static GenerateNewNode Instance;
 
 	private GameObject newNode;
 	private	GameObject newConnection;
 
 	void Start() {
+		Instance = this;
 		button.GetComponent<Button> ().interactable = true;
 	}
 

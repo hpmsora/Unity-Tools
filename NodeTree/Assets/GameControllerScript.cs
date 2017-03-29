@@ -50,6 +50,16 @@ public class GameControllerScript : MonoBehaviour {
 			
 			//Loading the Game Method
 			Debug.Log ("Loading the Game");
+
+			for (int i = 0; i < nodeList.Count; i++) {
+				int[] pos = GenerateNewNode.Instance.changeAbpos (nodeList [i]);
+
+				newNode = Instantiate (node, new Vector3 (pos [0] * 100, pos [1] * 100, -50), Quaternion.identity, parentGroup) as GameObject;
+			}
 		}
+	}
+
+	public void Reload() {
+		Start ();
 	}
 }
