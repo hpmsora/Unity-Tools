@@ -49,6 +49,7 @@
      <Compile Include="Assets\GameControllerScript.cs" />
      <Compile Include="Assets\GenerateNewNode.cs" />
      <Compile Include="Assets\NodeInfo.cs" />
+     <Compile Include="Assets\SaveAndLoadScript.cs" />
      <Compile Include="Assets\UIGraph\Scripts\Connection.cs" />
      <Compile Include="Assets\UIGraph\Scripts\ConnectionManager.cs" />
      <Compile Include="Assets\UIGraph\Scripts\ConnectionPoint.cs" />

@@ -1,4 +1,7 @@
-﻿public class NodeInfo {
+﻿using System;
+
+[Serializable]
+public class NodeInfo {
 
 	//Node Identification
 	public int direction; //N = 0, E = 1, S = 2, W = 3, Center = 4;
